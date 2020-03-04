@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3ipp05bl5q5xi</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>576</width>
+        <height>672</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="S_PIEZA" sid="2253783958253286">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="X_INDEX" sid="1006112630690058" type="number" />
+                <instance-variable name="Y_INDEX" sid="2195963778319436" type="number" />
+                <instance-variable name="ESTADO" sid="1085533603680512" type="number" />
+                <instance-variable name="BORDE" sid="9913934240612734" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="3218333323407319">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2528523658999379" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\Tetris\Tetris-construct 2\PIEZA_BORDE.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="S_BLOKE" sid="4465068535610465">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ACTIVO" sid="9708634235605791" type="boolean" />
+                <instance-variable name="ORIGINAL" sid="4948180851264591" type="number" />
+                <instance-variable name="FIGURA" sid="7106852196982456" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="4404767015750331">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="BLOKE_1" pingpong="0" repeatcount="1" repeatto="0" sid="8287102135186749" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_T2.png">
+                        <collision-poly>
+                            <point x="0.0572917" y="0.21875" />
+                            <point x="0.869792" y="0.210938" />
+                            <point x="0.557292" y="0.351563" />
+                            <point x="0.5" y="0.835938" />
+                            <point x="0.411458" y="0.34375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.21875" y="0.942708" />
+                            <point x="0.210938" y="0.130208" />
+                            <point x="0.351563" y="0.442708" />
+                            <point x="0.835938" y="0.5" />
+                            <point x="0.34375" y="0.588542" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.75">
+                        <collision-poly>
+                            <point x="0.942708" y="0.78125" />
+                            <point x="0.130208" y="0.789063" />
+                            <point x="0.442708" y="0.648438" />
+                            <point x="0.5" y="0.164063" />
+                            <point x="0.588542" y="0.65625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.75" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.78125" y="0.0572917" />
+                            <point x="0.789063" y="0.869792" />
+                            <point x="0.648438" y="0.557292" />
+                            <point x="0.164063" y="0.5" />
+                            <point x="0.65625" y="0.411458" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.75" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.78125" y="0.0572917" />
+                            <point x="0.789063" y="0.869792" />
+                            <point x="0.648438" y="0.557292" />
+                            <point x="0.164063" y="0.5" />
+                            <point x="0.65625" y="0.411458" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="BLOKE_2" pingpong="0" repeatcount="1" repeatto="0" sid="727203213090318" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_S2.png">
+                        <collision-poly>
+                            <point x="0.442708" y="0.507813" />
+                            <point x="0.473958" y="0.195313" />
+                            <point x="0.890625" y="0.273438" />
+                            <point x="0.572917" y="0.351563" />
+                            <point x="0.552083" y="0.570313" />
+                            <point x="0.515625" y="0.789063" />
+                            <point x="0.322917" y="0.835938" />
+                            <point x="0.109375" y="0.757813" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.507813" y="0.557292" />
+                            <point x="0.195313" y="0.526042" />
+                            <point x="0.273438" y="0.109375" />
+                            <point x="0.351563" y="0.427083" />
+                            <point x="0.570313" y="0.447917" />
+                            <point x="0.789063" y="0.484375" />
+                            <point x="0.835938" y="0.677083" />
+                            <point x="0.757813" y="0.890625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.507813" y="0.557292" />
+                            <point x="0.195313" y="0.526042" />
+                            <point x="0.273438" y="0.109375" />
+                            <point x="0.351563" y="0.427083" />
+                            <point x="0.570313" y="0.447917" />
+                            <point x="0.789063" y="0.484375" />
+                            <point x="0.835938" y="0.677083" />
+                            <point x="0.757813" y="0.890625" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="BLOKE_3" pingpong="0" repeatcount="1" repeatto="0" sid="7761862121637446" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.375" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_I.png">
+                        <collision-poly>
+                            <point x="0.46875" y="0.910156" />
+                            <point x="0.28125" y="0.503906" />
+                            <point x="0.5" y="0.0976563" />
+                            <point x="0.640625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.375" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.910156" y="0.53125" />
+                            <point x="0.503906" y="0.71875" />
+                            <point x="0.0976563" y="0.5" />
+                            <point x="0.5" y="0.359375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.375" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.910156" y="0.53125" />
+                            <point x="0.503906" y="0.71875" />
+                            <point x="0.0976563" y="0.5" />
+                            <point x="0.5" y="0.359375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="BLOKE_4" pingpong="0" repeatcount="1" repeatto="0" sid="5165143687156913" speed="0">
+                    <frame duration="1" hotspotX="0.75" hotspotY="0.5" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_J.png">
+                        <collision-poly>
+                            <point x="0.734375" y="0.114583" />
+                            <point x="0.8125" y="0.901042" />
+                            <point x="0.171875" y="0.848958" />
+                            <point x="0.648438" y="0.791667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25">
+                        <collision-poly>
+                            <point x="0.114583" y="0.265625" />
+                            <point x="0.901042" y="0.1875" />
+                            <point x="0.848958" y="0.828125" />
+                            <point x="0.791667" y="0.351563" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.265625" y="0.885417" />
+                            <point x="0.1875" y="0.0989581" />
+                            <point x="0.828125" y="0.151042" />
+                            <point x="0.351563" y="0.208333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.75">
+                        <collision-poly>
+                            <point x="0.885417" y="0.734375" />
+                            <point x="0.0989581" y="0.8125" />
+                            <point x="0.151042" y="0.171875" />
+                            <point x="0.208333" y="0.648438" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.75">
+                        <collision-poly>
+                            <point x="0.885417" y="0.734375" />
+                            <point x="0.0989581" y="0.8125" />
+                            <point x="0.151042" y="0.171875" />
+                            <point x="0.208333" y="0.648438" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="BLOKE_5" pingpong="0" repeatcount="1" repeatto="0" sid="646883198613788" speed="0">
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_L2.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.875" />
+                            <point x="0.21875" y="0.140625" />
+                            <point x="0.359375" y="0.796875" />
+                            <point x="0.859375" y="0.854167" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.75">
+                        <collision-poly>
+                            <point x="0.875" y="0.859375" />
+                            <point x="0.140625" y="0.78125" />
+                            <point x="0.796875" y="0.640625" />
+                            <point x="0.854167" y="0.140625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.75" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.859375" y="0.125" />
+                            <point x="0.78125" y="0.859375" />
+                            <point x="0.640625" y="0.203125" />
+                            <point x="0.140625" y="0.145833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25">
+                        <collision-poly>
+                            <point x="0.125" y="0.140625" />
+                            <point x="0.859375" y="0.21875" />
+                            <point x="0.203125" y="0.359375" />
+                            <point x="0.145833" y="0.859375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25">
+                        <collision-poly>
+                            <point x="0.125" y="0.140625" />
+                            <point x="0.859375" y="0.21875" />
+                            <point x="0.203125" y="0.359375" />
+                            <point x="0.145833" y="0.859375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="BLOKE_6" pingpong="0" repeatcount="1" repeatto="0" sid="7432640914306435" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_Z2.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.273438" />
+                            <point x="0.53125" y="0.210938" />
+                            <point x="0.578125" y="0.617188" />
+                            <point x="0.895833" y="0.8125" />
+                            <point x="0.505208" y="0.765625" />
+                            <point x="0.463542" y="0.367188" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.273438" y="0.84375" />
+                            <point x="0.210938" y="0.46875" />
+                            <point x="0.617188" y="0.421875" />
+                            <point x="0.8125" y="0.104167" />
+                            <point x="0.765625" y="0.494792" />
+                            <point x="0.367188" y="0.536458" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.273438" y="0.84375" />
+                            <point x="0.210938" y="0.46875" />
+                            <point x="0.617188" y="0.421875" />
+                            <point x="0.8125" y="0.104167" />
+                            <point x="0.765625" y="0.494792" />
+                            <point x="0.367188" y="0.536458" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="BLOKE_7" pingpong="0" repeatcount="1" repeatto="0" sid="9521101514447451" speed="0">
+                    <frame duration="1" hotspotX="0.25" hotspotY="0.25" original-source="G:\Tetris\Tetris-construct 2\PIEZAS NUEVAS\PIEZA_C2.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.78125" y="0.3125" />
+                            <point x="0.796875" y="0.75" />
+                            <point x="0.15625" y="0.828125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="297037033689474">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Keyboard" sid="2602401658131986">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="A_PANTALLA" sid="1466517160116201">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Sprite" sid="3231172220219825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3532500139106687" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="G:\Tetris\Tetris-construct 2\texto\verdes\CARTEL_ESP.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.03125" />
+                            <point x="0.895833" y="0.0297619" />
+                            <point x="0.651042" y="0.5" />
+                            <point x="0.932292" y="0.980655" />
+                            <point x="0.5" y="0.977679" />
+                            <point x="0.0885417" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TXT_PUNTOS" sid="3018432002612858">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TXT_LINEAS" sid="257456274128088">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TXT_NIVEL" sid="1764686374222575">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Function" uid="201" />
+        <global-instance type="Keyboard" uid="202" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
